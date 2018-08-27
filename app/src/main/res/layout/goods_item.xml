@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp">
+
+
+
+    <ImageView
+        android:id="@+id/goodImg"
+        android:left="5dp"
+        android:top="70dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/goods"
+        android:radius="10dp"
+        />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/goodImg"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:text="theSAEM得鲜口红持久保湿不容易脱色韩国防水姨妈豆沙色哑光唇膏哈哈哈"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTitle"
+        android:layout_toRightOf="@+id/goodImg"
+        android:layout_alignLeft="@+id/textTitle"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:id="@+id/saleNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#C1C1C1"
+            android:gravity="left"
+            android:text="已售 - -"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LL1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTitle"
+        android:layout_alignRight="@+id/textTitle"
+        android:layout_marginTop="5dp"
+        >
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/textTitle"-->
+            <!--android:textColor="#C1C1C1"-->
+            <!--android:text="在售价 "-->
+            <!--android:textSize="14dp" />-->
+
+        <TextView
+            android:id="@+id/priceOld"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#C1C1C1"
+            android:gravity="left"
+            android:text="19.99"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textTitle"
+        android:layout_below="@+id/ll"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/goodImg"
+        android:background="@drawable/viewborder"
+        >
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:background="#fc1f65"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:text="券"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/couponPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/viewborder"
+            android:gravity="left"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:text="5.00元"
+            android:textColor="#E9474C"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LL1"
+        android:layout_marginLeft="10dp"
+        android:layout_alignRight="@+id/textTitle"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textTitle"
+            android:foregroundGravity="right"
+            android:textColor="#C1C1C1"
+            android:text="券后价 "
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/discountPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textTitle"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:textColor="#E9474C"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:text="￥9.99"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

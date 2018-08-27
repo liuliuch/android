@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/viewborder"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/leftcircle" />
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_radius"
+            android:queryHint="搜索内容"
+            app:iconifiedByDefault="false" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/flame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/search_view">
+       <com.example.macbookpro.easyweather.UtilGET.ZFlowLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           
+       </com.example.macbookpro.easyweather.UtilGET.ZFlowLayout>
+
+        <view class="android.support.v7.app.AlertController$RecycleListView"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            >
+
+        </view>
+    </RelativeLayout>
+</RelativeLayout>
