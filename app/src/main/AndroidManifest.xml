@@ -21,7 +21,7 @@
         <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
         <!-- </intent-filter> -->
         <!-- </activity> -->
-        <activity android:name=".GoodsListActivity">
+        <activity android:name=".ButtonListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,7 +29,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".HotSearchActivity" />
-        <activity android:name=".IndexActivity"></activity>
+        <activity android:name=".IndexActivity" />
+        <activity android:name=".GoodsListActivity" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

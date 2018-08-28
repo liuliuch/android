@@ -1,6 +1,9 @@
 apply plugin: 'com.android.application'
 
 android {
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
     compileSdkVersion 26
     buildToolsVersion "28.0.1"
     defaultConfig {
@@ -32,6 +35,7 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:3.7.0'
     implementation 'com.google.code.gson:gson:2.8.0'
     implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.jcodecraeer:xrecyclerview:1.5.9'
 
 
 }

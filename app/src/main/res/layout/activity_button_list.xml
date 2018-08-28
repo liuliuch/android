@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/Recyclerview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recyclerview1"
+        android:gravity="center"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/Recyclerview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recyclerview2"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:layout_below="@id/Recyclerview1"
+        />
+
+    <Button
+        android:id="@+id/Recyclerview3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recyclerview3"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:layout_below="@id/Recyclerview2"/>
+
+    <Button
+        android:id="@+id/Recyclerview4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recyclerview4"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:layout_below="@id/Recyclerview3" />
+    <Button
+        android:id="@+id/Listview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ListView"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:layout_below="@id/Recyclerview4"/>
+
+    <Button
+        android:id="@+id/hotsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FlowLayout"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:layout_below="@+id/Listview1"/>
+
+    <Button
+        android:id="@+id/get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="okhttp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:layout_below="@id/hotsearch"/>
+
+</RelativeLayout>

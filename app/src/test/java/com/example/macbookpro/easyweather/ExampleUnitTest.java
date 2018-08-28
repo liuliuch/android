@@ -1,5 +1,7 @@
 package com.example.macbookpro.easyweather;
 
+import android.util.Log;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -11,7 +13,8 @@ import static org.junit.Assert.*;
  */
 public class ExampleUnitTest {
     @Test
-    public void addition_isCorrect() throws Exception {
-        assertEquals(4, 2 + 2);
+    public void addition_isCorrect() {
+       // assertEquals(3, 2 + 2);
+        Log.d("测试", "addition_isCorrect: alalalalllal");
     }
 }

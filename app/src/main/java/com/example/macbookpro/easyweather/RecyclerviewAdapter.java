@@ -60,7 +60,8 @@ public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapte
 
     @Override
     public int getItemCount() {
-        return 10;
+        return 11;
+        // return list.size();
     }
 
 
